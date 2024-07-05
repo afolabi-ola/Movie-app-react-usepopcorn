@@ -36,7 +36,8 @@ export default function App() {
 
   return (
     <>
-      <NavBar>
+    <div class="desktop-only">
+  <NavBar>
         <Input query={query} setQuery={setQuery} />
         <NumResults movies={movies} />
       </NavBar>
@@ -72,6 +73,10 @@ export default function App() {
           )}
         </Box>
       </Main>
+</div>
+     <div class="mobile-message">
+  <p>Please view this application in desktop mode.</p>
+</div>
     </>
   );
 }
