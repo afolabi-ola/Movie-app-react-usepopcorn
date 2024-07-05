@@ -29,6 +29,33 @@ body {
   padding: 1.4rem;
 }
 
+.desktop-only {
+  display: block;
+}
+
+.mobile-message {
+  display: none;
+}
+
+/* Show the message and hide the main content on smaller screens */
+@media (max-width: 500px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-message {
+    width:100%;
+    height:100vh;
+    align-items:center;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+}
+
 /* ******* */
 
 .nav-bar {
